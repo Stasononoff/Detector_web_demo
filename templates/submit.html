@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home page</title>
+</head>
+
+<body>
+  <h1 style="color: blue">Home page</h1>
+  <p>Here you can attach the url to the picture with people to be detected:
+  <br> (please, refresh the page after any action to observe the latest data)</p>
+</body>
+
+<form method="POST" action="/submit">
+  {{ form.hidden_tag() }}
+  {{ form.link.label }} {{ form.link(size=20) }}
+  <input type="submit" value="Load image and detect">
+</form>
+
+
+<body>
+    <a href="{{url_for('draw_boxes') }}">Show detection result</a>
+</body>
+
+<body>
+    <a href="{{url_for('draw_masks') }}">Show segmentation result</a>
+</body>
+
+<body>
+  <a href="{{url_for('draw_all') }}">Show detection with segmentation result</a>
+</body>
+
+</html>
