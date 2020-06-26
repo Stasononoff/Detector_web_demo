@@ -17,6 +17,7 @@ import os
 import io
 import urllib
 
+recompute_scale_factor=True
 
 torch.nn.Module.dump_patches = True
 model = torch.load('models/maskRCNN.pt', map_location='cpu')
