@@ -46,7 +46,7 @@ $ sudo docker-compose up --build
 
 для глобального доступа к сайту (в побочном терминале):
 
-$ ./ngrok http 5000
+$ ./ngrok http 5001
 
 Подключиться к AWS:
 
