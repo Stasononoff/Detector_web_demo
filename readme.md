@@ -1,10 +1,21 @@
-sudo docker exec -it 719dbe80d2ed bash
-sudo docker exec -it hello_world_flask_1 bash
+В данном репозитории содержится:
+1) демо-версия онлайн детектора людей на изображениях и инструкция по его запуску;
+2) Файл с тренировкой детектора и блока сегментации "MaskRCNN_pretraining.ipynb";
+3) ссылка на готовый сайт.
+
+требования: docker, git
+
+1. Для запуска проекта на локальном сервере:
+$ sudo docker-compose build
+$ sudo docker-compose up
+   ИЛИ
+$ sudo docker-compose up --build
+
+для глобального доступа к сайту (в побочном терминале):
+
+$ ./ngrok http 5000
 
 
-sudo docker-compose build
-sudo docker-compose up --build
-sudo docker-compose up
 
 
 
