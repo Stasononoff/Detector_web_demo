@@ -6,9 +6,13 @@
 требования: docker, git
 
 1. Для запуска проекта на локальном сервере:
+
 $ sudo docker-compose build
+
 $ sudo docker-compose up
+
    ИЛИ
+   
 $ sudo docker-compose up --build
 
 для глобального доступа к сайту (в побочном терминале):
