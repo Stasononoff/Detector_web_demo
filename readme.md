@@ -21,7 +21,7 @@ $ ./ngrok http 5000
 
 Подключиться к AWS:
 
-$ ssh -i "MyKeys.pem" ubuntu@ec2-18-222-156-49.us-east-2.compute.amazonaws.com
+$ ssh -i "MyKeys.pem" ubuntu@ec2-18-219-164-52.us-east-2.compute.amazonaws.com
 
 
 	
