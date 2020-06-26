@@ -30,7 +30,7 @@ $ git-lfs track "*.pt"
 
     демо-версия онлайн детектора людей на изображениях и инструкция по его запуску;
     Файл с тренировкой детектора и блока сегментации "MaskRCNN_pretraining.ipynb";
-    ссылка на готовый сайт.
+    ссылка на готовый сайт ec2-18-222-38-196.us-east-2.compute.amazonaws.com:5001/
 
 требования: docker, git
 
@@ -50,4 +50,4 @@ $ ./ngrok http 5001
 
 Подключиться к AWS:
 
-$ ssh -i "MyKeys.pem" ubuntu@ec2-18-219-164-52.us-east-2.compute.amazonaws.com
+$ ssh -i "MyKeys.pem" ubuntu@ec2-18-222-38-196.us-east-2.compute.amazonaws.com
